@@ -3,6 +3,7 @@
 @forward 'scss/tokens';
 @forward 'scss/typography.module';
 @forward 'scss/colors.module';
+@forward 'scss/elevation.module';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
@@ -127,6 +128,8 @@ body {
                     @extend .primary;
                     @extend .display-medium;
                     @extend .on-primary-text;
+
+                    @extend .elevation-level1;
                 }
             }
         }
@@ -164,6 +167,7 @@ body {
 
                 h2 {
                     @extend .headline-medium;
+                    @extend .primary-text;
                 }
 
                 p {
@@ -215,6 +219,8 @@ body {
                 @extend .primary;
                 @extend .display-medium;
                 @extend .on-primary-text;
+
+                @extend .elevation-level1;
             }
         }
 
@@ -242,14 +248,17 @@ body {
             @extend .primary-container;
             h3 {
                 @extend .display-small;
+                @extend .on-primary-container-text;
             }
 
             h2 {
                 @extend .display-medium;
+                @extend .on-primary-container-text;
             }
 
             h1 {
                 @extend .display-large;
+                @extend .on-primary-container-text;
             }
         }
 
