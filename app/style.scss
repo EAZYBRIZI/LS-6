@@ -138,6 +138,7 @@ body {
     .main {
         display: flex;
         flex-direction: column;
+        @extend .background-color;
 
         .cards {
             flex-basis: 0;
@@ -167,11 +168,12 @@ body {
 
                 h2 {
                     @extend .headline-medium;
-                    @extend .primary-text;
+                    @extend .secondary-text;
                 }
 
                 p {
                     @extend .body-large;
+                    @extend .on-surface-text;
                 }
             }
 
@@ -228,6 +230,7 @@ body {
             margin: 0px;
             padding: 64px 156px;
 
+            @extend .on-surface-text;
             @extend .surface-variant;
             @extend .body-large;
             p {
@@ -269,9 +272,23 @@ body {
 
             padding: 93px 0px;
 
-            img {
+            .lightLogo {
                 width: 552px;
                 height: 269px;
+
+                @media(prefers-color-scheme: dark) {
+                    display: none;
+                }
+            }
+
+            .darkLogo {
+                display: none;
+                width: 552px;
+                height: 269px;
+
+                @media(prefers-color-scheme: dark) {
+                    display: block;
+                }
             }
         }
 

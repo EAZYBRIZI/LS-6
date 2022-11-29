@@ -29,6 +29,7 @@
      --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-light);
      --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-light);
      --md-sys-color-scrim: var(--md-sys-color-scrim-light);
+     --background-color: var(--background-color-light);
  }
 
 @mixin themeDark {
@@ -62,6 +63,7 @@
     --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-dark);
     --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-dark);
     --md-sys-color-scrim: var(--md-sys-color-scrim-dark);
+    --background-color: var(--background-color-dark);
 }
 
 @mixin theme {
